@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Victoria - 7° 2°">
+  <meta name="description" content="THRONO'S GYM - Gestión de clientes y rutinas">
+  <title>Clientes y Rutinas - THRONO'S GYM</title>
+  <!-- CSS propio igual que etapa 3 -->
+  <link rel="stylesheet" href="estilo.css">
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body style="color: #ffffff;">
+
+  <header>
+    <h1 class="texto-dorado">THRONO'S GYM</h1>
+    <h2 class="texto-negro">📋 Gestión de Clientes y Rutinas</h2>
+    <hr class="hr-dorado">
+  </header>
+
+  <!-- MENÚ CON BOOTSTRAP igual que index -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #222222;">
+    <div class="container-fluid">
+
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#menuNav"
+              aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menuNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a href="index.html" class="nav-link link-menu">🏠 Volver al inicio</a></li>
+          <li class="nav-item"><a href="#clientes"         class="nav-link link-menu">Clientes registrados</a></li>
+          <li class="nav-item"><a href="#rutinas"          class="nav-link link-menu">Rutinas</a></li>
+          <li class="nav-item"><a href="#pagos"            class="nav-link link-menu">Pagos</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <hr class="hr-oscuro">
+
+  <main class="main-clientes">
+
+    <!-- SECCIÓN: CLIENTES REGISTRADOS -->
+    <section id="clientes">
+      <h2 class="texto-dorado">Clientes Registrados</h2>
+      <p class="texto-negro">Listado de socios activos del gimnasio con sus datos personales y plan contratado.</p>
+
+      <div class="table-responsive">
+        <table border="1">
+          <caption>Registro de clientes - 2026</caption>
+          <tr>
+            <th>N°</th>
+            <th>Nombre y Apellido</th>
+            <th>DNI</th>
+            <th>Teléfono</th>
+            <th>Plan</th>
+            <th>Turno</th>
+            <th>Estado</th>
+          </tr>
+          <tr class="fila-clara">
+            <td>001</td>
+            <td>González, María Laura</td>
+            <td>38.456.789</td>
+            <td>264-4112233</td>
+            <td>Pase Libre</td>
+            <td>Mañana</td>
+            <td class="estado-activo"><strong>Activo</strong></td>
+          </tr>
+          <tr class="fila-oscura">
+            <td>002</td>
+            <td>Rodríguez, Carlos</td>
+            <td>35.123.456</td>
+            <td>264-4554433</td>
+            <td>3 días por semana</td>
+            <td>Tarde</td>
+            <td class="estado-activo"><strong>Activo</strong></td>
+          </tr>
+          <tr class="fila-clara">
+            <td>003</td>
+            <td>López, Valentina</td>
+            <td>40.789.123</td>
+            <td>264-4778899</td>
+            <td>2 días por semana</td>
+            <td>Mañana</td>
+            <td class="estado-inactivo"><em>Inactivo</em></td>
+          </tr>
+          <tr class="fila-oscura">
+            <td>004</td>
+            <td>Herrera, Lucas</td>
+            <td>42.321.654</td>
+            <td>264-4990011</td>
+            <td>Pase Libre</td>
+            <td>Tarde</td>
+            <td class="estado-activo"><strong>Activo</strong></td>
+          </tr>
+          <tr class="fila-clara">
+            <td>005</td>
+            <td>Díaz, Sofía</td>
+            <td>39.654.321</td>
+            <td>264-4223344</td>
+            <td>4 días por semana</td>
+            <td>Mañana</td>
+            <td class="estado-activo"><strong>Activo</strong></td>
+          </tr>
+        </table>
+      </div>
+      <hr class="hr-margin">
+    </section>
+
+    <!-- SECCIÓN: RUTINAS -->
+    <section id="rutinas">
+      <h2 class="texto-dorado">Rutinas Asignadas</h2>
+      <p class="texto-negro">Cada socio tiene su rutina personalizada según su <em>objetivo y nivel</em>.</p>
+
+      <div class="table-responsive">
+        <table border="1">
+          <caption>Rutinas por cliente - 2026</caption>
+          <tr>
+            <th>Cliente</th>
+            <th>Objetivo</th>
+            <th>Nivel</th>
+            <th>Ejercicios principales</th>
+            <th>Series y repeticiones</th>
+            <th>Instructor</th>
+          </tr>
+          <tr class="fila-clara">
+            <td>González, María Laura</td>
+            <td>Tonificación</td>
+            <td>Intermedio</td>
+            <td>Sentadillas, prensa, peso muerto</td>
+            <td>4 series x 12 reps</td>
+            <td>Prof. Romero</td>
+          </tr>
+          <tr class="fila-oscura">
+            <td>Rodríguez, Carlos</td>
+            <td>Volumen muscular</td>
+            <td>Avanzado</td>
+            <td>Press banca, dominadas, remo</td>
+            <td>5 series x 8 reps</td>
+            <td>Prof. Romero</td>
+          </tr>
+          <tr class="fila-clara">
+            <td>López, Valentina</td>
+            <td>Bajar de peso</td>
+            <td>Principiante</td>
+            <td>Cinta, bicicleta, abdominales</td>
+            <td>3 series x 15 reps</td>
+            <td>Prof. Martínez</td>
+          </tr>
+          <tr class="fila-oscura">
+            <td>Herrera, Lucas</td>
+            <td>Fuerza</td>
+            <td>Avanzado</td>
+            <td>Sentadilla libre, peso muerto, press</td>
+            <td>5 series x 5 reps</td>
+            <td>Prof. Romero</td>
+          </tr>
+          <tr class="fila-clara">
+            <td>Díaz, Sofía</td>
+            <td>Definición</td>
+            <td>Intermedio</td>
+            <td>Cardio + pesas ligeras</td>
+            <td>4 series x 20 reps</td>
+            <td>Prof. Martínez</td>
+          </tr>
+        </table>
+      </div>
+      <hr class="hr-margin">
+    </section>
+
+    <!-- SECCIÓN: PAGOS -->
+    <section id="pagos">
+      <h2 class="texto-dorado">Estado de Pagos</h2>
+      <p class="texto-negro">Control mensual de pagos de los socios del gimnasio.</p>
+
+      <div class="table-responsive">
+        <table border="1">
+          <caption>Registro de pagos - Mayo 2026</caption>
+          <tr>
+            <th>Cliente</th>
+            <th>Plan</th>
+            <th>Monto</th>
+            <th>Fecha de pago</th>
+            <th>Vencimiento</th>
+            <th>Estado</th>
+          </tr>
+          <tr class="fila-clara">
+            <td>González, María Laura</td>
+            <td>Pase Libre</td>
+            <td>$27.000</td>
+            <td>01/05/2026</td>
+            <td>31/05/2026</td>
+            <td class="estado-pagado"><strong>Pagado</strong></td>
+          </tr>
+          <tr class="fila-oscura">
+            <td>Rodríguez, Carlos</td>
+            <td>3 días</td>
+            <td>$23.000</td>
+            <td>03/05/2026</td>
+            <td>31/05/2026</td>
+            <td class="estado-pagado"><strong>Pagado</strong></td>
+          </tr>
+          <tr class="fila-clara">
+            <td>López, Valentina</td>
+            <td>2 días</td>
+            <td>$20.000</td>
+            <td>-</td>
+            <td>31/05/2026</td>
+            <td class="texto-dorado"><mark class="marca-pendiente">Pendiente</mark></td>
+          </tr>
+          <tr class="fila-oscura">
+            <td>Herrera, Lucas</td>
+            <td>Pase Libre</td>
+            <td>$27.000</td>
+            <td>02/05/2026</td>
+            <td>31/05/2026</td>
+            <td class="estado-pagado"><strong>Pagado</strong></td>
+          </tr>
+          <tr class="fila-clara">
+            <td>Díaz, Sofía</td>
+            <td>4 días</td>
+            <td>$25.000</td>
+            <td>05/05/2026</td>
+            <td>31/05/2026</td>
+            <td class="estado-pagado"><strong>Pagado</strong></td>
+          </tr>
+        </table>
+      </div>
+      <hr class="hr-margin">
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA CON INFORMACIÓN COMPLETA -->
+  <footer>
+    <hr class="hr-oscuro">
+    <p class="texto-dorado"><strong>THRONO'S GYM</strong> &copy; 2026</p>
+    <p><small>📍 José Hernández, entre Florida y Av. 25 de Mayo - Jáchal, San Juan, Argentina</small></p>
+    <p><small>📞 (264) 5623196 &nbsp;|&nbsp;
+      📱 <a href="https://www.instagram.com/throno.s" target="_blank" class="link-instagram">@throno.s</a>
+    </small></p>
+    <p><a href="index.html" class="link-footer">← Volver al sitio principal</a></p>
+  </footer>
+
+  <!-- Script de Bootstrap necesario para el menú hamburguesa en celular -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- BOTÓN FLOTANTE: VOLVER ARRIBA -->
+  <button id="btnSubir" class="boton-flotante" aria-label="Volver arriba" title="Volver arriba">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+  <style>
+    .boton-flotante {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #FFD700;
+      color: #111111;
+      border: 2px solid #222222;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(15px);
+      transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.2s ease;
+      z-index: 999;
+    }
+    .boton-flotante.mostrar {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+    .boton-flotante:hover {
+      background-color: #d4a90e;
+    }
+  </style>
+  <script>
+    const btnSubir = document.getElementById("btnSubir");
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 300) {
+        btnSubir.classList.add("mostrar");
+      } else {
+        btnSubir.classList.remove("mostrar");
+      }
+    });
+    btnSubir.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+
+</body>
+</html>
