@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Página</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        .contenedor {
+            background: white;
+            width: 80%;
+            max-width: 500px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            color: #0078d7;
+        }
+
+        button {
+            background: #0078d7;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #005fa3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>¡Servidor funcionando!</h1>
+        <p>Si estás viendo esta página, tu hosting está sirviendo archivos HTML correctamente.</p>
+
+        <button onclick="saludar()">
+            Probar JavaScript
+        </button>
+    </div>
+
+    <script>
+        function saludar() {
+            alert("¡JavaScript funciona correctamente!");
+        }
+    </script>
+
+</body>
+</html>
